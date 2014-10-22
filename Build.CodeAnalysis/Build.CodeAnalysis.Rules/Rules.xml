@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Rules FriendlyName="HomeNet Code Analysis Rules">
+  <Rule TypeName="AsyncMustReturnTask" Category="NativeCode" CheckId="NC1001">
+    <Name>Async methods must return a task.</Name>
+    <Description>Ensures asynchronous methods return a Task and not void.</Description>
+    <Resolution>Do not return void and instead return a Task for {1} in {0}.{1}.</Resolution>
+    <MessageLevel Certainty="100">Error</MessageLevel>
+    <FixCategories>Breaking</FixCategories>
+    <Email />
+    <Owner />
+    <Url />
+  </Rule>
+  <Rule TypeName="MustBeNamedAsync" Category="NativeCode" CheckId="NC1002">
+    <Name>Methods returning Tasks must end with Async.</Name>
+    <Description>Ensures methods returning Tasks end with Async.</Description>
+    <Resolution>Do not named Task-returning methods without Async appended for {1} in {0}.{1}.</Resolution>
+    <MessageLevel Certainty="100">Error</MessageLevel>
+    <FixCategories>Breaking</FixCategories>
+    <Email />
+    <Owner />
+    <Url />
+  </Rule>
+</Rules>
