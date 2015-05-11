@@ -6,7 +6,7 @@
     using Xamarin.Forms;
     using Xamarin.Forms.Platform.Android;
 
-    [Activity(MainLauncher = true)]
+    [Activity(MainLauncher = true, Theme = "@style/AppTheme")]
     public class MainActivity : FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
